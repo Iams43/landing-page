@@ -1,3 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+/* change the default margin to 0. background color fills to edge of page */
+body {
+    margin:0;
+}
+
+img{
+    max-inline-size: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-inline-size: 1200px;
+    margin-inline: auto;
+    padding-inline: 16px;
+    
+    
+}
+
 .page-header {
     display: flex;
     justify-content: space-around;   
@@ -7,11 +28,35 @@
     
 }
 
+footer {
+    font-size: .5rem; 
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    font-family: 'Roboto', 'sans-serif';
+    background-color: #1f2937;
+    color: #f9faf8;
+    gap: .5rem;
+    
+}
+
 .welcome-content {
     display: flex;
+    background-color: #1f2937;
+       
+}
+
+
+.two-columns {
+    display: grid;
+    gap: 60px;
+    margin-block: 100px;
+    margin-inline: 100px;
     
+    @media (min-width: 750px) {
+        grid-template-columns: 1fr 1fr;   
     
-    background-color: #1f2937;    
+        }    
 }
 
 
@@ -45,3 +90,48 @@
 .primary-navigation a:hover {
     color: #3b82f6;    
 }
+
+.secondary-navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    gap: .3125rem;
+    
+}
+.secondary-navigation a {
+    color: #e5e7eb; 
+      
+    text-decoration: none;
+    
+}
+
+.secondary-navigation a:hover {
+    color: #3b82f6;    
+}
+/* 
+    -Pseudo Classes(:) for links-
+    a:hover = color of mouse hover over links
+    -Order of matter for link pseudo classes-
+    a:visible = changes link color when visited
+    a:focus-visible = allows tab selection and adds color if chosen
+    a:active = changes color when link is clicked
+    
+    */
+
+    /* -two column layout-
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr; 
+    
+    wrapper/container class
+    max-inline-size: 1200px;
+    margin-inline: auto;
+    padding-inline: 16px;
+
+    media query example:
+    @media (min-width: 768px) {
+        .class-name {   
+            property: value; 
+        }
+    */
