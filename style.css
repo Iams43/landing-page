@@ -72,6 +72,16 @@ footer {
     color: #e5e7eb;
 }
 
+.sign-up{
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: none;
+    padding: .1rem .9rem;
+    font-size: .5rem;
+    border-radius: .25rem;
+    
+}
+
 /* 1 rem = 16px*/
 .primary-navigation ul {
     display: flex;
