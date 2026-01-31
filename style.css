@@ -19,6 +19,24 @@ img{
     
 }
 
+.quote {
+    background-color: #e5e7eb;
+    font-size: 2.25rem;
+    font-family: 'Georgia', 'serif';
+    font-style: italic;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-inline: 100px;
+    font-weight: 300;
+}
+.satisfied-parent {
+    font-size: 1rem;
+    font-style: oblique;
+    font-weight: 700;
+    margin-top: .5rem;
+    text-align: right;
+}
+
 .page-header {
     display: flex;
     justify-content: space-around;   
@@ -83,7 +101,32 @@ footer {
     
 }
 
-.sign-up:hover {
+.join{
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: solid;
+    border-color: azure;
+    padding: .1rem .9rem;
+    font-size: .5rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    
+}
+
+.join-section {
+
+    background-color: #3882f6;
+    font-size: 2.25rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: 175px;
+    font-weight: 300;
+
+}
+
+.sign-up:hover, .join:hover {
     background-color: #113177;    
 }
 
